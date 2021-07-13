@@ -1,6 +1,8 @@
-import Value from "./Models/Value.js"
+import Value from "./Models/Snacks.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
+
+//array of snacks here...
 
 class AppState extends EventEmitter {
   /** @type {Value[]} */
