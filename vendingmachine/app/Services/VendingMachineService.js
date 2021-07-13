@@ -1,6 +1,7 @@
 import { ProxyState } from "../SnacksState.js";
 import Value from "../Models/Snacks.js";
 //determines if there is enough $$
+let coin = 0
 class ValuesService {
   addValue() {
     ProxyState.values = [...ProxyState.values, new Value({ title: (.25) })]
@@ -8,8 +9,9 @@ class ValuesService {
 
   
   makeCoin() {
-    let coin
+    coin = coin + .25
     console.log(coin)
+    document.getElementById('coin').innerText = coin
   }
 }
 
