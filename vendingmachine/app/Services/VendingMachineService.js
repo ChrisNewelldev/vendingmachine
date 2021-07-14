@@ -10,7 +10,6 @@ class ValuesService {
   
   makeCoin() {
     coin = coin + .25
-    console.log(coin)
     document.getElementById('coin').innerText = coin
   }
 }

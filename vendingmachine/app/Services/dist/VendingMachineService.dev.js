@@ -46,7 +46,6 @@ function () {
     key: "makeCoin",
     value: function makeCoin() {
       coin = coin + .25;
-      console.log(coin);
       document.getElementById('coin').innerText = coin;
     }
   }]);
